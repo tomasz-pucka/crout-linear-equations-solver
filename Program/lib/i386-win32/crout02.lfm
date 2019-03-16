@@ -1,0 +1,27 @@
+object Form2: TForm2
+  Left = 321
+  Height = 308
+  Top = 288
+  Width = 564
+  Caption = 'Metoda Crouta'
+  ClientHeight = 308
+  ClientWidth = 564
+  LCLVersion = '1.8.2.0'
+  object Button3: TButton
+    Left = 16
+    Height = 25
+    Top = 272
+    Width = 75
+    Caption = 'Cofnij'
+    OnClick = Button3Click
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 8
+    Width = 8
+    Caption = 'A'
+    ParentColor = False
+  end
+end

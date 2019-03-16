@@ -1,0 +1,583 @@
+object CSF3: TCSF3
+  Left = 110
+  Height = 431
+  Top = 72
+  Width = 1209
+  Caption = 'Metoda Crouta'
+  ClientHeight = 431
+  ClientWidth = 1209
+  Font.CharSet = EASTEUROPE_CHARSET
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  LCLVersion = '1.8.2.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 8
+    Width = 8
+    Caption = 'A'
+    ParentColor = False
+  end
+  object A00E: TEdit
+    Left = 16
+    Height = 23
+    Top = 32
+    Width = 70
+    TabOrder = 0
+  end
+  object A01E: TEdit
+    Left = 92
+    Height = 23
+    Top = 32
+    Width = 70
+    TabOrder = 1
+  end
+  object A10E: TEdit
+    Left = 16
+    Height = 23
+    Top = 64
+    Width = 70
+    TabOrder = 2
+  end
+  object A11E: TEdit
+    Left = 92
+    Height = 23
+    Top = 64
+    Width = 70
+    TabOrder = 3
+  end
+  object Label2: TLabel
+    Left = 256
+    Height = 15
+    Top = 8
+    Width = 5
+    Caption = 'x'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 888
+    Height = 15
+    Top = 8
+    Width = 8
+    Caption = '='
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 915
+    Height = 15
+    Top = 8
+    Width = 7
+    Caption = 'b'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 233
+    Height = 15
+    Top = 8
+    Width = 5
+    Caption = '*'
+    ParentColor = False
+  end
+  object B0E: TEdit
+    Left = 914
+    Height = 23
+    Top = 32
+    Width = 130
+    TabOrder = 4
+  end
+  object B1E: TEdit
+    Left = 914
+    Height = 23
+    Top = 64
+    Width = 130
+    TabOrder = 5
+  end
+  object A21E: TEdit
+    Left = 92
+    Height = 23
+    Top = 96
+    Width = 70
+    TabOrder = 6
+  end
+  object A20E: TEdit
+    Left = 16
+    Height = 23
+    Top = 96
+    Width = 70
+    TabOrder = 7
+  end
+  object A02E: TEdit
+    Left = 168
+    Height = 23
+    Top = 32
+    Width = 70
+    TabOrder = 8
+  end
+  object A12E: TEdit
+    Left = 168
+    Height = 23
+    Top = 64
+    Width = 70
+    TabOrder = 9
+  end
+  object A22E: TEdit
+    Left = 168
+    Height = 23
+    Top = 96
+    Width = 70
+    TabOrder = 10
+  end
+  object B2E: TEdit
+    Left = 915
+    Height = 23
+    Top = 96
+    Width = 130
+    TabOrder = 11
+  end
+  object x1L: TEdit
+    Left = 256
+    Height = 23
+    Top = 32
+    Width = 130
+    Color = 16448250
+    ReadOnly = True
+    TabOrder = 12
+  end
+  object x2L: TEdit
+    Left = 256
+    Height = 23
+    Top = 64
+    Width = 130
+    Color = 16448250
+    ReadOnly = True
+    TabOrder = 13
+  end
+  object x3L: TEdit
+    Left = 256
+    Height = 23
+    Top = 96
+    Width = 130
+    Color = 16448250
+    ReadOnly = True
+    TabOrder = 14
+  end
+  object CofnijB: TButton
+    Left = 16
+    Height = 25
+    Top = 392
+    Width = 80
+    Caption = 'Cofnij'
+    OnClick = CofnijBClick
+    TabOrder = 15
+  end
+  object ObliczB: TButton
+    Left = 104
+    Height = 25
+    Top = 392
+    Width = 139
+    Caption = 'Oblicz'
+    OnClick = ObliczBClick
+    TabOrder = 16
+  end
+  object GroupBox1: TGroupBox
+    Left = 16
+    Height = 224
+    Top = 160
+    Width = 227
+    Caption = 'Generowanie liczb losowych'
+    ClientHeight = 204
+    ClientWidth = 223
+    TabOrder = 17
+    object Label8: TLabel
+      Left = 8
+      Height = 15
+      Top = 8
+      Width = 82
+      Caption = 'Podaj przedzial:'
+      ParentColor = False
+    end
+    object Label9: TLabel
+      Left = 8
+      Height = 15
+      Top = 39
+      Width = 8
+      Caption = '<'
+      ParentColor = False
+    end
+    object RandomBegE: TEdit
+      Left = 24
+      Height = 23
+      Top = 32
+      Width = 80
+      TabOrder = 0
+      Text = '0'
+    end
+    object Label10: TLabel
+      Left = 112
+      Height = 15
+      Top = 39
+      Width = 3
+      Caption = ';'
+      ParentColor = False
+    end
+    object RandomEndE: TEdit
+      Left = 120
+      Height = 23
+      Top = 32
+      Width = 80
+      TabOrder = 1
+      Text = '0'
+    end
+    object Label11: TLabel
+      Left = 208
+      Height = 15
+      Top = 39
+      Width = 8
+      Caption = '>'
+      ParentColor = False
+    end
+    object LosujB: TButton
+      Left = 8
+      Height = 25
+      Top = 168
+      Width = 96
+      Caption = 'Losuj'
+      OnClick = LosujBClick
+      TabOrder = 2
+    end
+    object RadioGroup1: TRadioGroup
+      Left = 8
+      Height = 89
+      Top = 72
+      Width = 185
+      AutoFill = True
+      Caption = 'Zbior losowanych liczb'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 69
+      ClientWidth = 181
+      TabOrder = 3
+      object CalkRB: TRadioButton
+        Left = 6
+        Height = 35
+        Top = 0
+        Width = 169
+        Caption = 'Calkowite'
+        Checked = True
+        TabOrder = 1
+        TabStop = True
+      end
+      object RzeczRB: TRadioButton
+        Left = 6
+        Height = 34
+        Top = 35
+        Width = 169
+        Caption = 'Rzeczywiste'
+        TabOrder = 0
+      end
+    end
+  end
+  object WarningL: TLabel
+    Left = 16
+    Height = 15
+    Top = 128
+    Width = 5
+    Caption = '-'
+    ParentColor = False
+  end
+  object HilbertB: TButton
+    Left = 256
+    Height = 25
+    Top = 360
+    Width = 247
+    Caption = 'Generuj macierz Hilberta'
+    OnClick = HilbertBClick
+    TabOrder = 18
+  end
+  object BooDekkB: TButton
+    Left = 256
+    Height = 25
+    Top = 392
+    Width = 247
+    Caption = 'Generuj macierz Boothroyda-Dekkera'
+    OnClick = BooDekkBClick
+    TabOrder = 19
+  end
+  object GroupBox2: TGroupBox
+    Left = 256
+    Height = 96
+    Top = 256
+    Width = 247
+    Caption = 'Generowanie macierzy rzadkiej'
+    ClientHeight = 76
+    ClientWidth = 243
+    TabOrder = 20
+    object Label14: TLabel
+      Left = 8
+      Height = 15
+      Top = 8
+      Width = 116
+      Caption = 'Nasycenie zerami [%]:'
+      ParentColor = False
+    end
+    object MRSE: TSpinEdit
+      Left = 144
+      Height = 23
+      Top = 6
+      Width = 65
+      MinValue = 1
+      TabOrder = 0
+      Value = 1
+    end
+    object MRB: TButton
+      Left = 8
+      Height = 25
+      Top = 40
+      Width = 201
+      Caption = 'Generuj macierz rzadka'
+      OnClick = MRBClick
+      TabOrder = 1
+    end
+  end
+  object Ax2L: TEdit
+    Left = 1067
+    Height = 23
+    Top = 64
+    Width = 130
+    Color = 16448250
+    ReadOnly = True
+    TabOrder = 21
+  end
+  object Ax1L: TEdit
+    Left = 1067
+    Height = 23
+    Top = 32
+    Width = 130
+    Color = 16448250
+    ReadOnly = True
+    TabOrder = 22
+  end
+  object Label6: TLabel
+    Left = 1067
+    Height = 15
+    Top = 8
+    Width = 13
+    Caption = 'Ax'
+    ParentColor = False
+  end
+  object Ax3L: TEdit
+    Left = 1067
+    Height = 23
+    Top = 96
+    Width = 130
+    Color = 16448250
+    ReadOnly = True
+    TabOrder = 23
+  end
+  object ix1LL: TEdit
+    Left = 400
+    Height = 23
+    Top = 32
+    Width = 160
+    Color = 16448250
+    ReadOnly = True
+    TabOrder = 24
+  end
+  object ix2LL: TEdit
+    Left = 400
+    Height = 23
+    Top = 64
+    Width = 160
+    Color = 16448250
+    ReadOnly = True
+    TabOrder = 25
+  end
+  object ix3LL: TEdit
+    Left = 400
+    Height = 23
+    Top = 96
+    Width = 160
+    Color = 16448250
+    ReadOnly = True
+    TabOrder = 26
+  end
+  object ix1LR: TEdit
+    Left = 568
+    Height = 23
+    Top = 32
+    Width = 160
+    Color = 16448250
+    ReadOnly = True
+    TabOrder = 27
+  end
+  object ix2LR: TEdit
+    Left = 568
+    Height = 23
+    Top = 64
+    Width = 160
+    Color = 16448250
+    ReadOnly = True
+    TabOrder = 28
+  end
+  object ix3LR: TEdit
+    Left = 568
+    Height = 23
+    Top = 96
+    Width = 160
+    Color = 16448250
+    ReadOnly = True
+    TabOrder = 29
+  end
+  object Label21: TLabel
+    Left = 554
+    Height = 15
+    Top = 8
+    Width = 19
+    Caption = '[ x ]'
+    ParentColor = False
+  end
+  object ix1WL: TEdit
+    Left = 736
+    Height = 23
+    Top = 32
+    Width = 160
+    Color = 16448250
+    ReadOnly = True
+    TabOrder = 30
+  end
+  object ix2WL: TEdit
+    Left = 736
+    Height = 23
+    Top = 64
+    Width = 160
+    Color = 16448250
+    ReadOnly = True
+    TabOrder = 31
+  end
+  object ix3WL: TEdit
+    Left = 736
+    Height = 23
+    Top = 96
+    Width = 160
+    Color = 16448250
+    ReadOnly = True
+    TabOrder = 32
+  end
+  object Label19: TLabel
+    Left = 736
+    Height = 15
+    Top = 8
+    Width = 130
+    Caption = 'Szerokosc przedzialu [ x ]'
+    ParentColor = False
+  end
+  object Label12: TLabel
+    Left = 808
+    Height = 15
+    Top = 188
+    Width = 70
+    Caption = 'Maksymalny:'
+    ParentColor = False
+  end
+  object Label13: TLabel
+    Left = 808
+    Height = 15
+    Top = 220
+    Width = 60
+    Caption = 'Minimalny:'
+    ParentColor = False
+  end
+  object Label15: TLabel
+    Left = 808
+    Height = 15
+    Top = 252
+    Width = 36
+    Caption = 'Sredni:'
+    ParentColor = False
+  end
+  object MaxBBL: TEdit
+    Left = 892
+    Height = 23
+    Top = 184
+    Width = 150
+    Color = 16448250
+    ReadOnly = True
+    TabOrder = 33
+  end
+  object MinBBL: TEdit
+    Left = 892
+    Height = 23
+    Top = 216
+    Width = 150
+    Color = 16448250
+    ReadOnly = True
+    TabOrder = 34
+  end
+  object MeanBBL: TEdit
+    Left = 892
+    Height = 23
+    Top = 248
+    Width = 150
+    Color = 16448250
+    ReadOnly = True
+    TabOrder = 35
+  end
+  object Label23: TLabel
+    Left = 808
+    Height = 15
+    Top = 136
+    Width = 103
+    Caption = 'Bledy bezwzgledne:'
+    ParentColor = False
+  end
+  object Label24: TLabel
+    Left = 892
+    Height = 15
+    Top = 160
+    Width = 102
+    Caption = 'Arytmetyka zwykla:'
+    ParentColor = False
+  end
+  object Label25: TLabel
+    Left = 1047
+    Height = 15
+    Top = 160
+    Width = 135
+    Caption = 'Arytmetyka przedzialowa:'
+    ParentColor = False
+  end
+  object IMaxBBL: TEdit
+    Left = 1047
+    Height = 23
+    Top = 184
+    Width = 150
+    Color = 16448250
+    ReadOnly = True
+    TabOrder = 36
+  end
+  object IMinBBL: TEdit
+    Left = 1047
+    Height = 23
+    Top = 216
+    Width = 150
+    Color = 16448250
+    ReadOnly = True
+    TabOrder = 37
+  end
+  object IMeanBBL: TEdit
+    Left = 1047
+    Height = 23
+    Top = 248
+    Width = 150
+    Color = 16448250
+    ReadOnly = True
+    TabOrder = 38
+  end
+end

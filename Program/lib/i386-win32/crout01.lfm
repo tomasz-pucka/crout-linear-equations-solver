@@ -1,0 +1,52 @@
+object MainForm: TMainForm
+  Left = 0
+  Height = 121
+  Top = 0
+  Width = 194
+  Align = alCustom
+  Caption = 'Metoda Crouta'
+  ClientHeight = 121
+  ClientWidth = 194
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  LCLVersion = '1.8.2.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 16
+    Width = 121
+    Caption = 'Podaj ilosc zmiennych:'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 104
+    Height = 25
+    Top = 80
+    Width = 75
+    Caption = 'Dalej'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 16
+    Height = 25
+    Top = 80
+    Width = 75
+    Caption = 'Wyczysc'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object xQuantitySE: TSpinEdit
+    Left = 16
+    Height = 23
+    Top = 43
+    Width = 130
+    MaxValue = 2000
+    MinValue = 2
+    TabOrder = 2
+    Value = 2
+  end
+end
