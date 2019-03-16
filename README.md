@@ -1,6 +1,6 @@
 # Interval arithmetics linear equations solver using Crout matrix decomposition
 
-Linear equations solver using Crout decomposition in normal and interval arithmetics. Measures approximation error between results in these two arithmetics. It's able to generate Hilbert and Boothroyd-Dekker matrix.
+University project for "Numerical analysis". Linear equations solver using Crout decomposition in normal and interval arithmetics. Measures approximation error between results in these two arithmetics. It's able to generate Hilbert and Boothroyd-Dekker matrix.
 
 ## Running
 
